@@ -9,3 +9,5 @@ dependencyResolutionManagement {
 rootProject.name = "OfficeDB"
 include ':app'
 include ':domain'
+include ':data'
+include ':presentation'
