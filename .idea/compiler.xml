@@ -3,6 +3,8 @@
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel target="1.7">
       <module name="OfficeDB.app" target="11" />
+      <module name="OfficeDB.data" target="11" />
+      <module name="OfficeDB.presentation" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
