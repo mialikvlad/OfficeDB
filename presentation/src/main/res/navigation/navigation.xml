@@ -1,6 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/navigation">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/list_worker">
+
+    <fragment
+        android:id="@+id/list_worker"
+        android:name="com.example.presentation.fragment.FragmentListWorker"
+        tools:layout="@layout/list_worker">
+
+        <action
+            android:id="@+id/to_edit_worker"
+            app:destination="@+id/edit_worker"
+            />
+        <action
+            android:id="@+id/to_add_worker"
+            app:destination="@+id/add_worker"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/edit_worker"
+        android:name="com.example.presentation.fragment.FragmentEditWorker"
+        tools:layout="@layout/edit_worker">
+
+        <argument
+            android:name="id"
+            app:argType="long"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/add_worker"
+        android:name="com.example.presentation.fragment.FragmentEditWorker"
+        tools:layout="@layout/edit_worker">
+    </fragment>
 
 </navigation>
